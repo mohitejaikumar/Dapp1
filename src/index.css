@@ -1,0 +1,255 @@
+
+@font-face{
+  font-family: 'Space Grotesk';
+  src: url('/SpaceGrotesk.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk"
+}
+
+body, html{
+  height: 100%;
+  width: 100%;
+  background-color: #080D1A;
+  color:#fff;
+  
+}
+
+.nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:2.5vh 2vw;
+  font-size:0.59vw;
+  color:#ABC4FF;
+  height:12vh;
+}
+
+.nav-part-1{
+  display: flex;
+  gap:6vw;
+}
+
+.nav-part-1-tabs{
+  display: flex;
+  align-items: center;
+  gap:2vw;
+}
+
+.nav-part-2{
+  display: flex;
+  align-items: center;
+  gap:2vw;
+}
+
+
+.wallet-adapter-button-trigger , .submit-btn{
+  background-color: #27BDD8;
+  font-family:'Space Grotesk';
+  color:black;
+  height:6vh;
+  font-size: 1.1vw;
+  font-weight: 600;
+  width:100%;
+  border-radius:10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position:relative;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+    background-color: #1ea8c1;
+}
+
+.nav-part-1-tabs h1{
+  border-radius:10px;
+  padding: 1vh 1vw;
+  cursor:pointer;
+}
+
+.nav-part-1-tabs h1:hover{
+  background-color: #1C243E;
+}
+
+.turbo{
+  color:#27BDD8;
+}
+
+
+.swap-page{
+  display:flex;
+  justify-content: center;
+  height:88vh;
+}
+
+.swap-component{
+  width:40vw;
+  height:fit-content;
+  margin-top:8vh;
+  border-radius:15px;
+  background-color: #1C243E;
+  padding:20px;
+  display:flex;
+  flex-direction: column;
+  gap:3vh;
+  position:relative;
+}
+
+.from-div{
+  height:18vh;
+  padding:1vw 1vw;
+  background-color: #141A30;
+  border-radius:15px;
+  font-size: 0.47vw;
+  position:relative;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.to-div{
+  height:18vh;
+  padding:1vw 1vw;
+  background-color: #141A30;
+  border-radius:15px;
+  font-size: 0.47vw;
+  position:relative;
+  transition: all 0.3s ease;
+  
+}
+
+.swap-div{
+  height:65%;
+  border-radius:15px;
+  position:absolute;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: #0B1022;
+  padding:1vw;
+}
+
+.input-field{
+   border: none;         /* Remove border */
+  outline: none;        /* Remove outline (focus highlight) */
+  background: none;     /* Remove background */
+  padding: 0;           /* Remove padding */
+  margin: 0;            /* Remove margin */
+  box-shadow: none;     /* Remove shadow */
+  font-family: inherit; /* Inherit the font style from parent */
+  font-weight:600;
+  background-color:#0B1022;
+  color:white;
+  font-size: 1.5vw;
+  direction:rtl;
+  text-align:right;
+  unicode-bidi: plaintext; /* Ensure correct cursor behavior */
+
+}
+
+
+.quote{
+  color:white;
+  font-size: 1.5vw;
+  font-weight:600;
+}
+
+
+.token{
+  background-color: #1C243E;
+  width:fit-content;
+  padding: 1vw 1vw;
+  font-size: 0.7vw;
+  border-radius:15px;
+  text-transform: uppercase;
+  font-weight:600; 
+  display:flex;
+  align-items: center;
+  gap:1vw;
+  cursor:pointer;
+}
+
+.arrow{
+  transform: rotate(90deg);
+}
+
+.info{
+  background-color: #262F4C;
+  height:18vh;
+  border-radius:15px;
+  border: 0.1px solid rgba(245, 245, 245, 0.248);
+  padding:1vw 1vw;
+  display:none;
+}
+
+.chakra{
+  height:25px;
+  border-radius:50%;
+}
+.swap-arrow{
+  position:absolute;
+  bottom:-10px;
+  left:50%;
+  transform: translate(-50%,50%);
+  z-index:100;
+  border-radius:50%;
+  background-color: #8CA7E8;
+  color:black;
+  padding:7px;
+  cursor:pointer;
+}
+
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+ /* Loader Styles */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid white;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  justify-self: center;
+  position:absolute;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.min-threshold{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:0.5vw;
+  font-weight:200;
+  margin-top:2vh;
+  color:#8CA7E8;
+}
+
+.peg{
+  font-size:1vw;
+  font-weight:600;
+}
