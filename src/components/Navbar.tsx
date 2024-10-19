@@ -20,7 +20,7 @@ export default function Navbar(){
                 </div>
             </div>
             <div className="nav-part-2">
-                <h1>Priority: <span className="turbo">Turbo</span></h1>
+                <h1 className="priority">Priority: <span className="turbo">Turbo</span></h1>
                 <WalletMultiButton />
             </div>
         </div>
