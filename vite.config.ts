@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import path from "path"
 // Or for other frameworks:
 // import { svelte } from "@sveltejs/vite-plugin-svelte";
 // etc.
@@ -10,9 +11,11 @@ import nodePolyfills from 'rollup-plugin-polyfill-node';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  
   plugins: [react()], // Or svelte(), etc.
   resolve: {
     alias: {
+      "@": path.resolve(__dirname, "./src"),
       stream: "rollup-plugin-node-polyfills/polyfills/stream",
       events: "rollup-plugin-node-polyfills/polyfills/events",
       assert: "assert",
